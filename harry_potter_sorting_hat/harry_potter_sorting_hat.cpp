@@ -12,6 +12,9 @@ int main()
     int answer3;
     int answer4;
 
+    int max = 0;
+    std::string house;
+
     std::cout << "The Sorting Hat Quiz!";
     std::cout << "Q1) When I'm dead, I want people to remember me as?\n\n";
     std::cout << "1) The Good\n";
@@ -20,6 +23,7 @@ int main()
     std::cout << "4) The Bold\n";
     std::cin >> answer1;
 
+    //Decides the answer and allocates the points for the choosen answer
     switch (answer1) {
         case 1 : 
             hufflepuff++;
@@ -43,6 +47,7 @@ int main()
     std::cout << "2) Dusk\n";
     std::cin >> answer2;
 
+    //Decides the answer and allocates the points for the choosen answer
     switch (answer2) {
     case 1:
         gryffindor++;
@@ -61,6 +66,7 @@ int main()
     std::cout << "4) The drum\n";
     std::cin >> answer3;
 
+    //Decides the answer and allocates the points for the choosen answer
     switch (answer3) {
     case 1:
         slytherin++;
@@ -86,6 +92,7 @@ int main()
     std::cout << "4) The cobbled street lined (ancient buildings)\n";
     std::cin >> answer1;
 
+    //Decides the answer and allocates the points for the choosen answer
     switch (answer1) {
     case 1:
         hufflepuff++;
@@ -104,9 +111,7 @@ int main()
         break;
     }
 
-    int max = 0;
-    std::string house;
-
+    //Determines the house with the max points
     if (gryffindor > max) {
         
         max = gryffindor;
